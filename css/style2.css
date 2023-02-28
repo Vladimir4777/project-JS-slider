@@ -1,0 +1,253 @@
+@import "./normalize.css";
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+ 
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+ h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: 'Yeseva One', cursive;
+ }
+ h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+      padding: 25px 0 0 34px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #363636;
+ }
+
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+
+
+.button {
+    width: 161px;
+    height: 37px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    background: #E3B873;
+    color: #fff;
+
+    transition: background-color .2s ease-in;
+}
+.button:hover {
+    background-color: #f5d399;
+}
+
+.btn--big {
+    margin-right: 20px;
+    width: 207px;
+    height: 51px;
+}
+.btn--empty {
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    background-image: none; 
+    background: transparent;
+}
+
+.btn--form {
+    width: 200px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 27px;  
+}
+
+.btn--form--adv {
+    width: 213px;
+    height: 51px;
+    margin: 39px 44px 27px 244px;
+    font-size: 13px;
+    line-height: 21px;  
+}
+.btn--form--location {
+    margin: 0 150px;
+}
+
+/* Projects Section */
+
+.projects {
+    padding-top: 107px;
+    padding-bottom: 414px;
+    background-color: #131313;
+}
+
+.projects__list {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-right: 45px;
+    padding: 0;
+}
+
+.projects__item {
+    margin-right: 60px;
+    display: inline-block;
+    text-align: right;
+}
+
+.projects__item:last-child {
+    margin-right: 0;
+}
+
+.projects__link {
+    display: inline-block;
+    font-family: 'Yeseva One', cursive;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+
+    transition: color .2s ease-in, text-decoration .2s ease-in;
+
+}
+
+.projects__link:hover {
+    text-decoration: underline;
+    color: #E3B873;
+    
+}
+
+
+.projects__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.projects__content {
+    max-width: 445px;
+    
+}
+.projects__title {
+    margin-bottom: 34px;
+   
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.projects__text {
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.projects__apartament {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project__apartament-content {
+    width: 205px;
+}
+.projects__apartament-subtitle {
+    margin-bottom: 9px;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+   
+}
+
+
+.projects__aprtament-text {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.projects__arrow {
+    margin-right: 20px;
+    margin-left: 20px;
+
+    transition: width .9s ease-in, height .9s ease-in;
+
+}
+
+.projects__arrow:hover {
+    cursor: pointer;
+}
+
+.projects__circle-dull {
+    margin: 0 10px 0;
+}
+
+.projects__img-inner {
+    display: none;
+}
+.dots {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 7px;
+    cursor: pointer;
+    background:rgba(255, 255, 255, 0.3);
+    transition: background-color .2s ease-in;
+}
+.projects__icon-wrap {
+    display: flex;
+}
+.active {
+    background: #FFFFFF;
+    
+}
+.dots:hover {
+    background: #FFFFFF;
+}
+
+.active-link {
+    text-decoration: underline;
+    color: #E3B873;
+}
+
+
+
+
+/* 2slide */
+.slider_wrapper {
+    width: 679px;
+    overflow: hidden;
+}
+
+#left, #right, .projects__img-wrap, .dots{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img__wrap {
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: 1s;
+}
+
